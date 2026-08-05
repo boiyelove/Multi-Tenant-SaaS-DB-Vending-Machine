@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Multi-Tenant-SaaS-DB-Vending-Machine",
+  "rank": 45,
+  "action": "plan_multi_tenant_saas_db_vending_machine",
+  "allowedCredentialModes": [
+    "managed_identity",
+    "workload_identity"
+  ],
+  "protectedTargets": [
+    "production",
+    "break-glass"
+  ],
+  "allowedTenantIds": [
+    "tenant-a"
+  ]
+}
