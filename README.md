@@ -41,6 +41,14 @@ tests cannot claim a live cloud change occurred.
 
 The upper boundary names the principal services and technologies used by this repository. The lower boundary shows the implemented control flow: desired state is validated, provider action remains an explicit integration gate, and sanitized evidence is retained for review and deterministic replay.
 
+## Best complementary diagram
+
+**Recommended view: Tenant database provisioning lifecycle.** A lifecycle view is the strongest complement because it makes state transitions, approval points, expiry or recovery, and operational ownership explicit.
+
+![Icon-based tenant database provisioning lifecycle for Multi-Tenant-SaaS-DB-Vending-Machine](docs/operational-view.svg)
+
+The view follows **Approve tenant request → Allocate elastic capacity → Provision isolated database → Monitor and decommission**. Use it during design reviews, operational walkthroughs, and failure-mode discussions; use the logical architecture above when the question is which technologies integrate.
+
 ## Quickstart
 
 Requirements: Python 3.11+ and Git. No Azure credentials are required.
